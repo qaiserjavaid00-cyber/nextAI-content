@@ -94,6 +94,7 @@ import { signIn } from 'next-auth/react';
 import { useState } from 'react';
 import { Loader2 } from 'lucide-react';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 export default function LoginPage() {
     const [error, setError] = useState(null);
@@ -184,12 +185,12 @@ export default function LoginPage() {
 
             <hr className="my-6" />
 
-            <button
+            <Button
+                type="button"
                 onClick={() => signIn('google', { callbackUrl: '/dashboard' })}
-                className="w-full border p-2 rounded bg-white hover:bg-gray-100"
             >
                 Continue with Google
-            </button>
+            </Button>
         </div>
     );
 }
