@@ -68,6 +68,33 @@ export const authOptions = {
 
     callbacks: {
         // ✅ Runs on OAuth sign in (Google)
+        // async signIn({ user, profile, account }) {
+        //     if (account.provider === 'google') {
+        //         await connectDB();
+
+        //         let existingUser = await User.findOne({ email: profile.email });
+
+        //         if (!existingUser) {
+        //             const username = profile.name?.slice(0, 20) || 'User';
+
+        //             existingUser = await User.create({
+        //                 email: profile.email,
+        //                 username,
+        //                 image: profile.picture,
+        //                 role:
+        //                     profile.email === process.env.ADMIN_EMAIL
+        //                         ? 'admin'
+        //                         : 'user',
+        //             });
+        //         }
+
+        //         // Attach role to user so jwt callback receives it
+        //         user.role = existingUser.role;
+        //     }
+
+        //     return true;
+        // },
+
         async signIn({ user, profile, account }) {
             if (account.provider === 'google') {
                 await connectDB();
@@ -81,15 +108,14 @@ export const authOptions = {
                         email: profile.email,
                         username,
                         image: profile.picture,
-                        role:
-                            profile.email === process.env.ADMIN_EMAIL
-                                ? 'admin'
-                                : 'user',
+                        role: profile.email === process.env.ADMIN_EMAIL ? 'admin' : 'user',
                     });
                 }
 
-                // Attach role to user so jwt callback receives it
+                // Always attach role
                 user.role = existingUser.role;
+                user.id = existingUser._id.toString();
+                user.email = existingUser.email;
             }
 
             return true;

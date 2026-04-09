@@ -77,7 +77,7 @@ export default function LoginPage() {
             <hr className="my-6" />
 
             <button
-                onClick={() => signIn('google')}
+                onClick={() => signIn('google', { callbackUrl: '/dashboard' })}
                 className="w-full border p-2 mb-3"
             >
                 Continue with Google
