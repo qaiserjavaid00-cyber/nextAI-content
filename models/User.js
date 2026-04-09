@@ -12,8 +12,8 @@ const UserSchema = new Schema(
             required: [true, 'Username is required'],
         },
         password: {
-            type: String, // hashed password
-            required: [true, 'Password is required'],
+            type: String,
+            // required: [true, 'Password is required'],
         },
         image: {
             type: String,
