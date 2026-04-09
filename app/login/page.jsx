@@ -92,9 +92,10 @@
 
 import { signIn } from 'next-auth/react';
 import { useState } from 'react';
-import { Loader2 } from 'lucide-react';
+import { Google, Loader2 } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+
 
 export default function LoginPage() {
     const [error, setError] = useState(null);
@@ -188,7 +189,9 @@ export default function LoginPage() {
             <Button
                 type="button"
                 onClick={() => signIn('google', { callbackUrl: '/dashboard' })}
+                className="flex items-center justify-center gap-2 border border-gray-300 bg-white text-gray-700 hover:bg-gray-100 px-4 py-2 rounded shadow-md transition-all"
             >
+                <Google className="w-5 h-5" />
                 Continue with Google
             </Button>
         </div>
