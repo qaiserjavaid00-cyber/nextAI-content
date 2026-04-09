@@ -90,7 +90,7 @@ export default function UpgradeModal() {
                     <div className="p-6 space-y-5">
                         {/* Usage message */}
                         <p className="text-gray-700">
-                            🎉 You've reached your free limit. Time to level up your content game!
+                            {`🎉 You've reached your free limit. Time to level up your content game!`}
                         </p>
 
                         {/* Features */}
@@ -128,7 +128,7 @@ export default function UpgradeModal() {
 
                         {/* Footer note */}
                         <p className="text-xs text-gray-400 text-center">
-                            💡 Keep creating without limits. Your ideas deserve it.
+                            {`💡 Keep creating without limits. Your ideas deserve it.`}
                         </p>
                     </div>
                 </DialogDescription>
