@@ -34,7 +34,11 @@ A modern AI-powered SaaS application that helps users generate high-quality cont
 
 ## 📸 Screenshots
 
-_Add screenshots here for better presentation._
+### Stripe Integration - Step 1
+![Stripe Step 1](./stripe-1.png)
+
+### Stripe Integration - Step 2
+![Stripe Step 2](./stripe-2.png)
 
 ---
 
