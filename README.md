@@ -9,6 +9,17 @@ A modern AI-powered SaaS application that helps users generate high-quality cont
 👉 https://next-ai-content-chi.vercel.app
 
 ---
+## 🎯 Why This Project Matters
+
+> This project goes beyond basic AI integration by focusing on **efficient, scalable, and structured AI content generation workflows**.
+
+### 🚧 Key Challenges Solved
+
+- 🧠 Designing **structured prompt engineering strategies** for consistent output quality
+- ⚡ Managing **API latency and response handling** for real-time user experience
+- 💸 Optimizing **token usage and cost efficiency** for scalable AI usage
+- 🔁 Handling **asynchronous AI responses and retries** for reliability
+- 🧩 Building a modular system for **multiple AI content tools (blogs, ads, summaries)**
 
 ## ✨ Features
 
