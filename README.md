@@ -47,14 +47,16 @@ This project is built using a hybrid full-stack architecture leveraging Next.js 
 
 ---
 
-### 🔐 Password Recovery System
+## 🔐 Authentication & Security System
 
-- Implemented a secure **forgot password workflow** using real email delivery via Gmail SMTP
-- Generated **time-sensitive reset tokens** to ensure secure password reset flow
-- Integrated email service to send real-time password reset links to users
-- Handled token validation and expiration on the server side for security
+- Implemented authentication using **NextAuth v4** with secure session-based access control
+- Built a complete **forgot password system using Gmail SMTP integration**
+- Generated secure, time-sensitive reset tokens for password recovery
+- Ensured server-side validation of reset tokens to prevent unauthorized access
+- Designed secure authentication flows integrated with Next.js Server Actions
 
 ---
+
 ## 🛠️ Tech Stack
 
 - **Frontend:** Next.js  
