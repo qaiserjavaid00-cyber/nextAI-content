@@ -40,6 +40,13 @@ This project is built using a hybrid full-stack architecture leveraging Next.js 
 - 🔐 User authentication system  
 
 ---
+### 🧠 User Content History & Persistence Layer
+- Stored all generated AI outputs in a database for each user
+- Enabled users to revisit and manage previously generated content
+- Designed relational mapping between user accounts and generated outputs
+
+---
+
 ### 🔐 Password Recovery System
 
 - Implemented a secure **forgot password workflow** using real email delivery via Gmail SMTP
