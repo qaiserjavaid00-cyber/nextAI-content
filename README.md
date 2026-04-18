@@ -31,7 +31,14 @@ A modern AI-powered SaaS application that helps users generate high-quality cont
 - 🔐 User authentication system  
 
 ---
+### 🔐 Password Recovery System
 
+- Implemented a secure **forgot password workflow** using real email delivery via Gmail SMTP
+- Generated **time-sensitive reset tokens** to ensure secure password reset flow
+- Integrated email service to send real-time password reset links to users
+- Handled token validation and expiration on the server side for security
+
+---
 ## 🛠️ Tech Stack
 
 - **Frontend:** Next.js  
