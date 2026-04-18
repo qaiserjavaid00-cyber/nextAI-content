@@ -21,6 +21,15 @@ A modern AI-powered SaaS application that helps users generate high-quality cont
 - 🔁 Handling **asynchronous AI responses and retries** for reliability
 - 🧩 Building a modular system for **multiple AI content tools (blogs, ads, summaries)**
 
+## 🧠 System Architecture Overview
+
+This project is built using a hybrid full-stack architecture leveraging Next.js App Router capabilities.
+
+- Core business logic is handled using **Server Actions** to reduce API overhead and improve performance
+- Authentication is managed via **NextAuth v4**, ensuring secure session-based access control
+- Custom email workflows (forgot password system) are handled using real Gmail SMTP integration
+- Client-side interactions are minimal and focused on UI responsiveness, while server operations handle data consistency and security
+
 ## ✨ Features
 
 - 🧠 AI-powered content generation  
